@@ -1,0 +1,15 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1366px;
+$breakpoint-gap: 0.02px;
+
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-only: "(min-width: #{$breakpoint-desktop})";
+$not-mobile: "(min-width: #{$breakpoint-tablet})";
+$not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+
+$font-family-300: "Roboto Condensed Light", "Arial", sans-serif;
+$font-family: "Roboto Condensed", "Arial", sans-serif;
+$font-family-700: "Roboto Condensed Bold", "Arial", sans-serif;
+$second-family-800: "Alumni Sans Extrabold", "Arial", sans-serif;
+$second-family-600: "Alumni Sans Semibold", "Arial", sans-serif;

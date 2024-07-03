@@ -1,31 +1,62 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Сайт">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
+    <link rel="preload" href="sass/style.scss" as="style">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans/alumni-sans-semibold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -->
+<!--     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <main>
+      <section class="hero" data-test="hero">
+        <div class="hero__container">
+          <header class="hero__header header">
+            <div class="header__logo-wrapper">
+              <img src="/__spritemap#sprite-logo-view" alt="Логотип нашего фитнес центра." width="100" height="20">
+            </div>
+            <a class="header__phone" aria-label="Позвонить по номеру 8 (800) 555-55-55" href="tel:88005555555">8 800 555-55-55</a>
+          </header>
+          <div class="hero__text-wrapper">
+            <p class="hero__text hero__text--city">Омск</p>
+            <h1 class="hero__title">Фитнес центр</h1>
+            <div class="hero__offers">
+              <p class="hero__text">Тренажёрный зал</p>
+              <p class="hero__text">Групповые занятия</p>
+              <p class="hero__text">Кардио-зона</p>
+            </div>
+          </div>
+          <button class="hero__button" type="button">Купить абонемент</button>
+          <div class="hero__image-wrapper">
+            <img src="#" alt="Наш лучший тренер." width="324" height="390">
+          </div>
+        </div>
+      </section>
+      <div data-test="about">about</div>
+      <div data-test="price">price</div>
+      <div data-test="games">games</div>
+      <div data-test="juri">juri</div>
+      <div data-test="features">features</div>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+      <div data-test="footer">footer</div>
+    </main>
     <script type="module" src="js/main.js"></script>
   </body>
 

@@ -1,0 +1,90 @@
+.hero {
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  color: #ffffff;
+}
+
+.hero__container {
+  @include centerer;
+  padding-bottom: 32px;
+}
+
+.hero__header {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$not-mobile} {
+    padding: 30px 0;
+  }
+}
+
+.hero__text-wrapper {
+  padding: 48px 0;
+  display: grid;
+  align-items: end;
+  justify-items: end;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 11px 20px;
+  text-align: right;
+}
+
+.header__phone {
+  @include link;
+  font-family: $font-family-700;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.hero__button {
+  padding: 22px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: inherit;
+  font-family: $font-family-700;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  width: 100%;
+}
+
+.hero__image-wrapper {
+  display: none;
+
+  @media #{$not-mobile} {
+    display: block;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  grid-column: 2/3;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-family: $second-family-800;
+}
+
+.hero__offers {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.hero__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  font-family: $font-family;
+}
+
+.hero__text--city {
+  font-family: $second-family-600;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  grid-column: 2/3;
+}
