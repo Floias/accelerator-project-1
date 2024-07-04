@@ -6,6 +6,15 @@
 .hero__container {
   @include centerer;
   padding-bottom: 32px;
+
+  @media #{$not-mobile} {
+    display: grid;
+    gap: 0 30px;
+  }
+
+  @media #{$desktop-only} {
+    gap: 0 58px;
+  }
 }
 
 .hero__header {
@@ -14,7 +23,13 @@
   justify-content: space-between;
 
   @media #{$not-mobile} {
-    padding: 30px 0;
+    padding: 30px 0 27px 0;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  @media #{$desktop-only} {
+    padding: 32px 0 53px 0;
   }
 }
 
@@ -26,14 +41,34 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 11px 20px;
   text-align: right;
+
+  @media #{$not-mobile} {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 15px 0 40px 0;
+    align-items: center;
+    gap: 0 26px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 26px 0 25px 0;
+    gap: 27px 13px;
+  }
 }
 
-.header__phone {
+.hero__phone {
   @include link;
   font-family: $font-family-700;
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
+
+  @media #{$not-mobile} {
+    font-size: 24px;
+  }
+  @media #{$desktop-only} {
+    font-size: 26px;
+  }
 }
 
 .hero__button {
@@ -47,6 +82,20 @@
   font-size: 12px;
   line-height: 1;
   width: 100%;
+  cursor: pointer;
+
+  @media #{$not-mobile} {
+    padding: 20px;
+    grid-column: 1/2;
+    align-self: start;
+    justify-self: end;
+    width: 185px;
+  }
+
+  @media #{$desktop-only} {
+    padding: 27px;
+    width: 270px;
+  }
 }
 
 .hero__image-wrapper {
@@ -54,6 +103,17 @@
 
   @media #{$not-mobile} {
     display: block;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    justify-self: end;
+  }
+
+  @media #{$tablet-only} {
+    justify-self: end;
+  }
+
+  @media #{$desktop-only} {
+    margin-right: 72px;
   }
 }
 
@@ -66,11 +126,32 @@
   line-height: 1;
   letter-spacing: 0.02em;
   font-family: $second-family-800;
+
+  @media #{$not-mobile} {
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-right: -2px;
+  }
+
+  @media #{$desktop-only} {
+    font-size: 92px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
 }
 
 .hero__offers {
   grid-column: 1/2;
   grid-row: 2/3;
+
+  @media #{$not-mobile} {
+    padding-top: 54px;
+  }
+
+  @media #{$desktop-only} {
+    padding-top: 11px;
+  }
 }
 
 .hero__text {
@@ -79,6 +160,10 @@
   font-size: 14px;
   line-height: 1.43;
   font-family: $font-family;
+
+  @media #{$not-mobile} {
+    line-height: 1.57;
+  }
 }
 
 .hero__text--city {
@@ -87,4 +172,25 @@
   font-size: 32px;
   line-height: 1;
   grid-column: 2/3;
+
+  @media #{$not-mobile} {
+    font-size: 42px;
+    align-self: end;
+  }
+
+  @media #{$desktop-only} {
+    font-size: 54px;
+  }
+}
+
+.hero__logo-wrapper img {
+  @media #{$not-mobile} {
+    width: 110px;
+    height: 22px;
+  }
+
+  @media #{$desktop-only} {
+    width: 130px;
+    height: 26px;
+  }
 }
