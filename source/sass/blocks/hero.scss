@@ -35,7 +35,7 @@
 }
 
 .hero__text-wrapper {
-  padding: 48px 0;
+  padding: 46px 0 48px 0;
   display: grid;
   align-items: end;
   justify-items: end;
@@ -225,6 +225,10 @@
 }
 
 .hero__logo-wrapper img {
+  width: 100px;
+  height: 20px;
+  object-fit:fill;
+
   @media #{$not-mobile} {
     width: 110px;
     height: 22px;
