@@ -43,9 +43,9 @@
           <button class="hero__button" type="button">Купить абонемент</button>
           <div class="hero__image-wrapper">
             <picture>
-              <source media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.webp 1x, ./img/hero-img-desktop@2x.webp 2x" width="500" height="524">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.webp 1x, ./img/hero-img-desktop@2x.webp 2x" width="500" height="524">
               <source type="image/webp" srcset="./img/hero-img@1x.webp 1x, ./img/hero-img@2x.webp 2x" width="324" height="390">
-              <source media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.jpg 1x, ./img/hero-img-desktop@2x.jpg 2x" width="500" height="524">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/hero-img-desktop@1x.jpg 1x, ./img/hero-img-desktop@2x.jpg 2x" width="500" height="524">
               <img src="./img/hero-img@1x.jpg" srcset="./img/hero-img@2x.jpg" alt="Наш лучший тренер." width="324" height="390">
             </picture>
           </div>
@@ -62,22 +62,22 @@
         </div>
         <div class="about__img-wrapper">
           <picture>
-            <source media="(min-width: 1366px)" srcset="./img/gym-desktop@1x.webp 1x, ./img/gym-desktop@2x.webp 2x" width="660" height="400">
-            <source media="(min-width: 768px)" srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x" width="678" height="345">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/gym-desktop@1x.webp 1x, ./img/gym-desktop@2x.webp 2x" width="660" height="400">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/gym-tablet@1x.webp 1x, ./img/gym-tablet@2x.webp 2x" width="678" height="345">
             <source type="image/webp" srcset="./img/gym-mobile@1x.webp 1x, ./img/gym-mobile@2x.webp 2x" width="320" height="280">
-            <source media="(min-width: 1366px)" srcset="./img/gym-desktop@1x.jpg 1x, ./img/gym-desktop@2x.jpg 2x" width="660" height="400">
-            <source media="(min-width: 768px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x" width="678" height="345">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/gym-desktop@1x.jpg 1x, ./img/gym-desktop@2x.jpg 2x" width="660" height="400">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gym-tablet@1x.jpg 1x, ./img/gym-tablet@2x.jpg 2x" width="678" height="345">
             <img src="./img/gym-mobile@1x.jpg" alt="Изображение нашего просторного тренажерного зала." srcset="./img/gym-mobile@2x.jpg" width="320" height="280">
           </picture>
         </div>
         <div class="about__video-wrapper">
-          <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=SCzOYQdhKSObDS2O" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=SCzOYQdhKSObDS2O" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <picture>
-            <source media="(min-width: 1366px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x" width="360" height="230">
-            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x" width="270" height="170">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x" width="360" height="230">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x" width="270" height="170">
             <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x" width="320" height="170">
-            <source media="(min-width: 1366px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x" width="360" height="230">
-            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x" width="270" height="170">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x" width="360" height="230">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x" width="270" height="170">
             <img src="./img/video-mobile@1x.jpg" alt="Обложка видео-презентации." srcset="./img/video-mobile@2x.jpg" width="320" height="170">
           </picture>
           <button class="about__video-button" type="button">
@@ -85,7 +85,101 @@
           </button>
         </div>
       </section>
-      <div data-test="price">price</div>
+      <section class="tabs" data-test="price">
+        <div class="tabs__container">
+          <h2 class="tabs__title">Абонементы</h2>
+          <ul class="tabs__pagination-list">
+            <li class="tabs__pagination-item">
+<!-- Смена активной кнопки управляется классом tabs__button-active -->
+              <button class="tabs__pagination-item-button tabs__button tabs__button-active" type="button">1&nbsp;месяц</button>
+            </li>
+            <li class="tabs__pagination-item">
+              <button class="tabs__pagination-item-button tabs__button" type="button">6&nbsp;месяцев</button>
+            </li>
+            <li class="tabs__pagination-item">
+              <button class="tabs__pagination-item-button tabs__button" type="button">12&nbsp;месяцев</button>
+            </li>
+          </ul>
+          <ul class="tabs__contents-list">
+<!-- Смена информации в табе классом tabs__item-active -->
+            <li class="tabs__contents-item tabs__item-active">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item" data-price="5000">
+                  <h3 class="tabs__item-title">С&nbsp;тренером</h3>
+                  <p class="tabs__item-info">12&nbsp;занятий</p>
+                  <p class="tabs__item-price">5000<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="1700">
+                  <h3 class="tabs__item-title">Дневной</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;17:00</p>
+                  <p class="tabs__item-price">1700<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="2700">
+                  <h3 class="tabs__item-title">Полный день</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;22:00</p>
+                  <p class="tabs__item-price">2700<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__contents-item">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item" data-price="30000">
+                  <h3 class="tabs__item-title">С&nbsp;тренером</h3>
+                  <p class="tabs__item-info">12&nbsp;занятий</p>
+                  <p class="tabs__item-price">30000<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="10200">
+                  <h3 class="tabs__item-title">Дневной</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;17:00</p>
+                  <p class="tabs__item-price">10200<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="16200">
+                  <h3 class="tabs__item-title">Полный день</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;22:00</p>
+                  <p class="tabs__item-price">16200<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs__contents-item">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item" data-price="60000">
+                  <h3 class="tabs__item-title">С&nbsp;тренером</h3>
+                  <p class="tabs__item-info">12&nbsp;занятий</p>
+                  <p class="tabs__item-price">60000<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="20400">
+                  <h3 class="tabs__item-title">Дневной</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;17:00</p>
+                  <p class="tabs__item-price">20400<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+                <li class="tabs__content-item" data-price="32400">
+                  <h3 class="tabs__item-title">Полный день</h3>
+                  <p class="tabs__item-info">с&nbsp;8:00 до&nbsp;22:00</p>
+                  <p class="tabs__item-price">32400<span>&#8381;</span>
+                  </p>
+                  <a class="tabs__item-link" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
       <div data-test="games">games</div>
       <div data-test="juri">juri</div>
       <div data-test="features">features</div>
