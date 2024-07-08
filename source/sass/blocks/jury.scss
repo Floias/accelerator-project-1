@@ -1,0 +1,58 @@
+.jury__container {
+  @include centerer;
+}
+
+.jury__title {
+  font-family: $second-family-600;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.jury__control {
+  display: none;
+}
+
+.jury__item {
+  display: none;
+  position: relative;
+}
+
+.jury__item-active {
+  display: block;
+}
+
+.jury__item-title {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transform: translateX(50%);
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.jury__content {
+  //display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: #ffffff;
+}
+
+.jury__item-description {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.jury__achievements-list {
+  padding-left: 50px;
+  width: 200px;
+  font-family: $font-family;
+  font-weight: 400;
+  list-style-type: disc;
+}

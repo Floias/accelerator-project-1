@@ -186,29 +186,180 @@
             <h2 class="games__title">SUPER GAMES</h2>
             <div class="games__text-wrapper">
               <h3 class="games__text-title">Дата</h3>
-              <p class="game__text">
+              <p class="games__text">
                 7 <span>Марта 2019</span>
               </p>
               <h3 class="games__text-title">Время</h3>
-              <p class="game__text">12:00</p>
+              <p class="games__text">12:00</p>
             </div>
             <p class="games__description">Ежегодные соревнования по&nbsp;CrossFit</p>
             <a class="games__link" href="#">Заполнить заявку</a>
           </div>
           <div class="games__image">
             <picture>
-            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.webp 1x, ./img/games-desktop@2x.webp 2x" width="660" height="500">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/games-tablet@1x.webp 1x, ./img/games-tablet@2x.webp 2x" width="378" height="348">
-            <source type="image/webp" srcset="./img/games-mobile@1x.webp 1x, ./img/games-mobile@2x.webp 2x" width="290" height="290">
-            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.jpg 1x, ./img/games-desktop@2x.jpg 2x" width="660" height="500">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/games-tablet@1x.jpg 1x, ./img/games-tablet@2x.jpg 2x" width="378" height="348">
-            <img src="./img/games-mobile@1x.jpg" alt="Изображение нашего просторного тренажерного зала." srcset="./img/games-mobile@2x.jpg" width="290" height="290">
-          </picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.webp 1x, ./img/games-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/games-tablet@1x.webp 1x, ./img/games-tablet@2x.webp 2x" width="378" height="348">
+              <source type="image/webp" srcset="./img/games-mobile@1x.webp 1x, ./img/games-mobile@2x.webp 2x" width="290" height="290">
+              <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.jpg 1x, ./img/games-desktop@2x.jpg 2x" width="660" height="500">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/games-tablet@1x.jpg 1x, ./img/games-tablet@2x.jpg 2x" width="378" height="348">
+              <img src="./img/games-mobile@1x.jpg" alt="Фото-обложка баннера." srcset="./img/games-mobile@2x.jpg" width="290" height="290">
+            </picture>
           </div>
         </div>
       </section>
+      <section class="jury" data-test="juri">
+        <div class="jury__container">
+          <h2 class="jury__title">Жюри</h2>
+          <div class="jury__control">
+            <button class="jury__button jury__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий товар.</span>
+            </button>
+            <button class="jury__button jury__button--next" type="button">
+              <span class="visually-hidden">Следующий товар.</span>
+            </button>
+          </div>
+          <ul class="jury__list">
+            <!-- Активный слайд класс jury__item-active -->
+            <li class="jury__item jury__item-active">
+              <h3 class="jury__item-title">Анна Павлова</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-pavlova-a@1x.webp 1x, ./img/card-pavlova-a@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-pavlova-a@1x.jpg" alt="Фото Александра Пашкова." srcset="./img/card-pavlova-a@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Алексей Лавров</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-lavrov-a@1x.webp 1x, ./img/card-lavrov-a@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-lavrov-a@1x.jpg" alt="Фото Алексея Лаврова." srcset="./img/card-lavrov-a@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Александр Пашков</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-pashkov-a@1x.webp 1x, ./img/card-pashkov-a@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-pashkov-a@1x.jpg" alt="Фото Александра Пашкова." srcset="./img/card-pashkov-a@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Мария Кетова</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-ketova-m@1x.webp 1x, ./img/card-ketova-m@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-ketova-m@1x.jpg" alt="Фото Марии Кетовой." srcset="./img/card-ketova-m@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Анна Лаврова</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-ketova-m@1x.webp 1x, ./img/card-ketova-m@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-ketova-m@1x.jpg" alt="Фото Анны Лавровой." srcset="./img/card-ketova-m@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Алексей Павлов</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-pashkov-a@1x.webp 1x, ./img/card-pashkov-a@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-pashkov-a@1x.jpg" alt="Фото Алексея Павлова." srcset="./img/card-pashkov-a@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Александр Кетов</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-pashkov-a@1x.webp 1x, ./img/card-pashkov-a@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-pashkov-a@1x.jpg" alt="Фото Александра Кетова." srcset="./img/card-pashkov-a@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="jury__item">
+              <h3 class="jury__item-title">Мария Пашкова</h3>
+              <div class="jury__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="./img/card-ketova-m@1x.webp 1x, ./img/card-ketova-m@2x.webp 2x" width="260" height="300">
+                  <img src="./img/card-ketova-m@1x.jpg" alt="Фото Марии Пашковой." srcset="./img/card-ketova-m@2x.jpg" width="260" height="300">
+                </picture>
+              </div>
+              <div class="jury__content">
+                <p class="jury__item-description">CrossFit</p>
+                <ul class="jury__achievements-list">
+                  <li class="jury__achievements-item">Certified Level&nbsp;3 Trainer</li>
+                  <li class="jury__achievements-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                  <li class="jury__achievements-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <div data-test="juri">juri</div>
       <div data-test="features">features</div>
       <div data-test="offers">offers</div>
       <div data-test="faq">faq</div>

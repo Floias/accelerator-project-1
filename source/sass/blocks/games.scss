@@ -1,6 +1,5 @@
 .games {
   padding: 25px 0;
-  background-color: #f8f9fc;
 
   @media #{$not-mobile} {
     padding: 60px 0;
@@ -23,7 +22,7 @@
     width: 678px;
   }
 
-  @media #{$not-mobile} {
+  @media #{$desktop-only} {
     width: 1160px;
   }
 }
@@ -76,7 +75,7 @@
     padding-top: 1px;
   }
 
-  @media #{$not-mobile} {
+  @media #{$desktop-only} {
     margin-bottom: 6px;
     padding-bottom: 6px;
   }
@@ -108,7 +107,7 @@
   }
 }
 
-.game__text span {
+.games__text span {
   padding-left: 4px;
   width: 32px;
   font-family: $font-family;
@@ -136,7 +135,6 @@
   }
 
   @media #{$desktop-only} {
-    //margin-top: -2px;
     padding: 0;
   }
 }
