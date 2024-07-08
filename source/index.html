@@ -180,7 +180,34 @@
           </ul>
         </div>
       </section>
-      <div data-test="games">games</div>
+      <section class="games" data-test="games">
+        <div class="games__container">
+          <div class="games__content">
+            <h2 class="games__title">SUPER GAMES</h2>
+            <div class="games__text-wrapper">
+              <h3 class="games__text-title">Дата</h3>
+              <p class="game__text">
+                7 <span>Марта 2019</span>
+              </p>
+              <h3 class="games__text-title">Время</h3>
+              <p class="game__text">12:00</p>
+            </div>
+            <p class="games__description">Ежегодные соревнования по&nbsp;CrossFit</p>
+            <a class="games__link" href="#">Заполнить заявку</a>
+          </div>
+          <div class="games__image">
+            <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.webp 1x, ./img/games-desktop@2x.webp 2x" width="660" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/games-tablet@1x.webp 1x, ./img/games-tablet@2x.webp 2x" width="378" height="348">
+            <source type="image/webp" srcset="./img/games-mobile@1x.webp 1x, ./img/games-mobile@2x.webp 2x" width="290" height="290">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/games-desktop@1x.jpg 1x, ./img/games-desktop@2x.jpg 2x" width="660" height="500">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/games-tablet@1x.jpg 1x, ./img/games-tablet@2x.jpg 2x" width="378" height="348">
+            <img src="./img/games-mobile@1x.jpg" alt="Изображение нашего просторного тренажерного зала." srcset="./img/games-mobile@2x.jpg" width="290" height="290">
+          </picture>
+          </div>
+        </div>
+      </section>
+
       <div data-test="juri">juri</div>
       <div data-test="features">features</div>
       <div data-test="offers">offers</div>
