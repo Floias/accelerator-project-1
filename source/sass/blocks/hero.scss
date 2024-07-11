@@ -21,7 +21,7 @@
 }
 
 .hero__header {
-  padding: 16px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -231,6 +231,10 @@
   @media #{$desktop-only} {
     font-size: 54px;
   }
+}
+
+.hero__logo-wrapper {
+  padding-top: 1px;
 }
 
 .hero__logo-wrapper img {
