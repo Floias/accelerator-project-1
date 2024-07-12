@@ -1,6 +1,14 @@
 .offers__container {
   padding: 41px 0;
   text-align: center;
+
+  @media #{$not-mobile} {
+    padding: 61px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 }
 
 .offers__title {
@@ -11,6 +19,7 @@
   line-height: 1;
 
   @media #{$not-mobile} {
+    margin-bottom: 34px;
     font-size: 42px;
   }
 
@@ -31,11 +40,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    gap: 35px 30px;
+    width: 678px;
   }
 }
 
 .offers__item {
-  padding: 28px 20px 12px;
+  @media #{$not-mobile} {
+    padding: 27px 20px 12px 27px;
+  }
 }
 
 .offers__item h3 {
@@ -46,6 +59,7 @@
   line-height: 1;
 
   @media #{$not-mobile} {
+    margin-bottom: 9px;
     font-size: 26px;
   }
 }
@@ -54,6 +68,7 @@
   margin: 0 0 20px 0;
 
   @media #{$not-mobile} {
+    margin-bottom: 30px;
     font-size: 16px;
   }
 }
@@ -99,6 +114,7 @@
   align-self: stretch;
 
   @media #{$not-mobile} {
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -106,13 +122,15 @@
 }
 
 .offers__item:has(img) div:first-child {
-  padding: 31px 0 0 0;
+  padding: 31px 20px 0;
 
   @media #{$not-mobile} {
+    padding: 40px 20px 0 25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
     align-items: start;
+    width: 278px;
   }
 }
 
@@ -123,6 +141,7 @@
   line-height: 100%;
 
   @media #{$not-mobile} {
+    margin: 20px 0 41px;
     font-size: 70px;
   }
 }
@@ -134,7 +153,9 @@
   line-height: 1.25;
 
   @media #{$not-mobile} {
+    padding: 0;
     font-size: 18px;
+    line-height: 1.33;
   }
 }
 
@@ -142,14 +163,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  height: 360px;
+
+  @media #{$not-mobile} {
+    width: 400px;
+    height: 462px;
+  }
+
+  @media #{$desktop-only} {
+    width: 280px;
+    height: 460px;
+  }
 }
 
 .offers__item:has(img) a {
   margin-bottom: 35px;
   text-decoration: underline 1px #ffffff;
+
+  @media #{$not-mobile} {
+    margin-bottom: 45px;
+  }
 }
 
 .offers__item:not(:has(img)) {
+  padding: 28px 20px 12px;
   position: relative;
   width: 290px;
 
@@ -167,9 +205,11 @@
   }
 
   @media #{$not-mobile} {
+    padding: 27px 27px 12px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, min-content);
     align-items: start;
+    width: 324px;
   }
 }
