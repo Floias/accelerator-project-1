@@ -16,7 +16,6 @@
 
 .about__text-container {
   @include centerer;
-
   padding-bottom: 21px;
 
   @media #{$not-mobile} {
@@ -238,6 +237,7 @@
   &:disabled {
     border-color: #102654;
     opacity: 0.4;
+    pointer-events: none;
   }
 
   &:disabled::before {

@@ -1,0 +1,33 @@
+.reviews__container {
+  margin: 0 auto;
+  padding: 40px;
+  width: $breakpoint-mobile;
+  text-align: center;
+
+  @media #{$not-mobile} {
+    padding: 60px 45px;
+    width: $breakpoint-tablet;
+  }
+
+  @media #{$desktop-only} {
+    padding: 100px 103px;
+    width: $breakpoint-desktop;
+  }
+}
+
+.reviews__title {
+  margin: 0 0 40px 0;
+  font-family: $second-family-600;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+
+  @media #{$not-mobile} {
+    margin-bottom: 35px;
+    font-size: 54px;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 75px;
+  }
+}
