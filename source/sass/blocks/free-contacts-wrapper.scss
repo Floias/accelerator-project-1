@@ -1,0 +1,8 @@
+.free-contacts-wrapper {
+  @media #{$desktop-only} {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: $breakpoint-desktop;
+  }
+}

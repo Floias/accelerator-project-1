@@ -1,0 +1,130 @@
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 40px 15px;
+  width: $breakpoint-mobile;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #ffffff;
+
+  @media #{$not-mobile} {
+    padding: 45px;
+    width: $breakpoint-tablet;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop-only} {
+    padding: 40px 103px;
+    width: $breakpoint-desktop;
+    gap: 260px;
+  }
+}
+
+.footer__logo-wrapper img {
+  width: 100px;
+  height: 20px;
+  object-fit: fill;
+
+  @media #{$not-mobile} {
+    width: 110px;
+    height: 22px;
+  }
+
+  @media #{$desktop-only} {
+    width: 130px;
+    height: 26px;
+  }
+}
+
+.footer__navigation-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+
+  @media #{$not-mobile} {
+    gap: 10px;
+  }
+}
+
+.footer__navigation-link {
+  @include link;
+  padding: 5px 10px;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+
+  @media #{$not-mobile} {
+    line-height: 1.57;
+  }
+
+  &:focus-visible {
+    outline: 1px solid #ffffff;
+    border-radius: none;
+  }
+
+  &:hover {
+    text-decoration: 1px underline #ffffff;
+    text-underline-offset: 5px;
+  }
+
+  &:not([href]) {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+.footer__social-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media #{$not-mobile} {
+    gap: 12px;
+  }
+}
+
+.footer__social-link {
+  @include link;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #030a1a;
+
+  &:focus-visible {
+    outline: none;
+    background-color: #103aae;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #74819c;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #102654;
+    color: #ffffff;
+  }
+
+  &:not([href]) {
+    color: #030a1a;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.footer__social-image {
+  width: 15px;
+  height: 15px;
+}
