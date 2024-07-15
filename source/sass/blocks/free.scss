@@ -5,7 +5,7 @@
 
 .free__container {
   margin: 0 auto;
-  padding: 70px 15px;
+  padding: 71px 15px 70px 15px;
   width: $breakpoint-mobile;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@
   @media #{$desktop-only} {
     padding: 60px 103px;
     width: 683px;
+    gap: 36px;
   }
 }
 
@@ -75,6 +76,7 @@
   }
 
   @media #{$desktop-only} {
+    padding: 1px 0 2px 0;
     width: 224px;
   }
 
@@ -97,7 +99,8 @@
     font-family: inherit;
     font-size: 14px;
     line-height: 1.57;
-    opacity: 0.7;
+    opacity: 0.4;
+    color: #ffffff;
   }
 }
 

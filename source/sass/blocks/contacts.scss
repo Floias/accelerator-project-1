@@ -9,8 +9,9 @@
   }
 
   @media #{$desktop-only} {
-    padding: 60px 103px;
+    padding: 59px 103px 55px 103px;
     width: 683px;
+    border-top: 1px solid #74819c;
   }
 }
 
@@ -28,6 +29,7 @@
   }
 
   @media #{$desktop-only} {
+    margin-bottom: 36px;
     text-align: left;
   }
 }
@@ -68,6 +70,10 @@
     margin-bottom: 7px;
     font-size: 24px;
   }
+
+  @media #{$desktop-only} {
+    margin-bottom: 6px;
+  }
 }
 
 .contacts__text {
@@ -80,6 +86,10 @@
   @media #{$not-mobile} {
     margin-bottom: 13px;
     line-height: 1.57;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 14px;
   }
 }
 
@@ -95,6 +105,10 @@
   @media #{$not-mobile} {
     margin-bottom: 13px;
     line-height: 1.57;
+  }
+
+  @media #{$desktop-only} {
+    margin-bottom: 14px;
   }
 
   &:hover {
