@@ -28,9 +28,8 @@
 }
 
 .games__content {
-  display: flex;
   flex-direction: column;
-  padding: 40px 40px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 117px 56px;
   gap: 0 37px;
@@ -63,12 +62,12 @@
 }
 
 .games__text-title {
-  margin: 0 0 2px 0;
+  margin: 0 0 2px;
   padding-bottom: 2px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
-  border-bottom: 1px solid #ffffffff;
+  border-bottom: 1px solid #ffffff;
 
   @media #{$not-mobile} {
     font-size: 18px;
@@ -82,7 +81,7 @@
 }
 
 .games__text {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
   display: flex;
   flex-wrap: wrap;
   font-family: $font-family-700;
@@ -141,6 +140,7 @@
 
 .games__link {
   @include link;
+
   border: 2px solid #ffffff;
   padding: 22px 40px;
   width: 210px;
@@ -163,7 +163,7 @@
 
   &:focus-visible {
     outline: none;
-    border-color:#000000;
+    border-color: #000000;
     background: rgba(255, 255, 255, 0.8);
     color: #103aae;
   }

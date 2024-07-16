@@ -5,7 +5,7 @@
 
 .free__container {
   margin: 0 auto;
-  padding: 71px 15px 70px 15px;
+  padding: 71px 15px 70px;
   width: $breakpoint-mobile;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
   display: contents;
 }
 
-.free_title {
+.free__title {
   margin: 0;
   font-family: $second-family-600;
   font-weight: 600;
@@ -46,6 +46,7 @@
 
 .free__list {
   @include reset-list;
+
   display: contents;
 
   @media #{$not-mobile} {
@@ -76,7 +77,7 @@
   }
 
   @media #{$desktop-only} {
-    padding: 1px 0 2px 0;
+    padding: 1px 0 2px;
     width: 224px;
   }
 
@@ -111,7 +112,7 @@
   font-size: 12px;
   line-height: 1;
   text-transform: uppercase;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   background-color: transparent;
   color: inherit;
   cursor: pointer;

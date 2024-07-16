@@ -8,7 +8,7 @@
 
   @media #{$desktop-only} {
     margin: 0 auto;
-    padding: 120px 103px 204px 103px;
+    padding: 120px 103px 204px;
     width: $breakpoint-desktop;
     display: flex;
     flex-wrap: wrap;
@@ -18,11 +18,11 @@
 
 .about__text-container {
   margin: 0 auto;
-  padding: 41px 15px 21px 15px;
+  padding: 41px 15px 21px;
   width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
-    padding: 61px 45px 20px 45px;
+    padding: 61px 45px 20px;
     width: $breakpoint-tablet;
   }
 

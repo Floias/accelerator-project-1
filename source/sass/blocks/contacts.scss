@@ -4,19 +4,19 @@
   width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
-    padding: 60px 164px 53px 164px;
+    padding: 60px 164px 53px;
     width: $breakpoint-tablet;
   }
 
   @media #{$desktop-only} {
-    padding: 59px 103px 55px 103px;
+    padding: 59px 103px 55px;
     width: 683px;
     border-top: 1px solid #74819c;
   }
 }
 
 .contacts__title {
-  margin: 0 0 37px 0;
+  margin: 0 0 37px;
   font-family: $second-family-600;
   font-weight: 600;
   font-size: 32px;
@@ -45,7 +45,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: 50%;
       width: 1px;
@@ -60,7 +60,7 @@
 }
 
 .contacts__address-title {
-  margin: 0 0 13px 0;
+  margin: 0 0 13px;
   font-family: $font-family;
   font-weight: 400;
   font-size: 20px;
@@ -77,7 +77,7 @@
 }
 
 .contacts__text {
-  margin: 0 0 27px 0;
+  margin: 0 0 27px;
   font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
@@ -95,6 +95,7 @@
 
 .contacts__link {
   @include link;
+
   font-family: $font-family;
   font-weight: 400;
   font-size: 14px;

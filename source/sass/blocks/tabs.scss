@@ -7,12 +7,12 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 12px;
       right: -14px;
       width: 275px;
       height: 328px;
-      background-image: url('../../img/weight-plates-tablet@1x.png');
+      background-image: url("../../img/weight-plates-tablet@1x.png");
       background-repeat: no-repeat;
       transform: rotate(-30deg);
     }
@@ -26,7 +26,7 @@
       right: 0;
       width: 303px;
       height: 384px;
-      background-image: url('../../img/weight-plates-desktop@1x.png');
+      background-image: url("../../img/weight-plates-desktop@1x.png");
       transform: rotate(0deg);
     }
   }
@@ -34,10 +34,11 @@
 
 .tabs__container {
   @include centerer;
-  padding: 41px 0 40px 0;
+
+  padding: 41px 0 40px;
 
   @media #{$not-mobile} {
-    padding: 62px 0 60px 0;
+    padding: 62px 0 60px;
   }
 
   @media #{$desktop-only} {
@@ -46,7 +47,7 @@
 }
 
 .tabs__title {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   font-family: $second-family-600;
   font-size: 32px;
   font-weight: 600;
@@ -66,8 +67,9 @@
 
 .tabs__pagination-list {
   @include reset-list;
-  margin: 0 auto 30px auto;
-  padding: 0 0 1px 0;
+
+  margin: 0 auto 30px;
+  padding: 0 0 1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -126,8 +128,8 @@
     font-size: 20px;
 
     &:focus-visible {
-    text-underline-offset: 11px;
-  }
+      text-underline-offset: 11px;
+    }
 
     &:hover {
       text-underline-offset: 11px;
@@ -156,6 +158,7 @@
 
 .tabs__content-list {
   @include reset-list;
+
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -175,7 +178,7 @@
 
 .tabs__content-item {
   position: relative;
-  padding: 51px 42px 50px 42px;
+  padding: 51px 42px 50px;
   background-color: #ffffff;
   width: 290px;
   text-align: center;
@@ -215,10 +218,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(130deg,#d10a42 0%, #00359f 100%);
+    background: linear-gradient(130deg, #d10a42 0%, #00359f 100%);
     clip-path: polygon(0 0, 0 100%, 7px 100%, 7px 7px, calc(100% - 7px) 7px, calc(100% - 7px) calc(100% - 7px), 7px calc(100% - 7px), 7px 100%, 100% 100%, 100% 0);
   }
 
@@ -238,7 +241,7 @@
 }
 
 .tabs__item-title {
-  margin: 0 0 19px 0;
+  margin: 0 0 19px;
   font-family: $font-family-700;
   font-weight: 700;
   font-size: 22px;
@@ -256,7 +259,7 @@
 }
 
 .tabs__item-info {
-  margin: 0 0 63px 0;
+  margin: 0 0 63px;
 
   @media #{$not-mobile} {
     font-size: 16px;
@@ -270,7 +273,7 @@
 }
 
 .tabs__item-price {
-  margin: 0 0 19px 0;
+  margin: 0 0 19px;
   padding-left: 2px;
   position: relative;
   font-family: $font-family-700;
@@ -300,6 +303,7 @@
 
 .tabs__item-link {
   @include link;
+
   display: block;
   margin: 0 auto;
   border: 2px solid #102654;

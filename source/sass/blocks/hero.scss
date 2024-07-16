@@ -5,11 +5,11 @@
 
 .hero__container {
   margin: 0 auto;
-  padding: 0 15px 32px 15px;
+  padding: 0 15px 32px;
   width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
-    padding: 0 45px 100px 45px;
+    padding: 0 45px 100px;
     width: $breakpoint-tablet;
     display: grid;
     gap: 0 30px;
@@ -18,7 +18,7 @@
   @media #{$desktop-only} {
     width: $breakpoint-desktop;
     gap: 0 56px;
-    padding: 0 103px 120px 103px;
+    padding: 0 103px 120px;
   }
 }
 
@@ -64,6 +64,7 @@
 
 .hero__phone {
   @include link;
+
   padding: 1px 1px 0 0;
   font-family: $font-family-700;
   font-weight: 700;
@@ -136,7 +137,7 @@
   }
 
   @media #{$not-mobile} {
-    padding: 21px 20px 19px 20px;
+    padding: 21px 20px 19px;
     grid-column: 1/2;
     align-self: start;
     justify-self: end;

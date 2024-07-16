@@ -20,7 +20,7 @@
   }
 
   @media #{$desktop-only} {
-    padding: 36px 103px 33px 103px;
+    padding: 36px 103px 33px;
     width: $breakpoint-desktop;
     justify-content: flex-end;
     gap: 45px;
@@ -55,6 +55,7 @@
 
 .footer__navigation-list {
   @include reset-list;
+
   margin-left: -10px;
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +73,7 @@
 
 .footer__navigation-link {
   @include link;
+
   padding: 5px 10px;
   font-family: $font-family;
   font-weight: 400;
@@ -100,6 +102,7 @@
 
 .footer__social-list {
   @include reset-list;
+
   padding-top: 3px;
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +120,7 @@
 
 .footer__social-link {
   @include link;
+
   width: 25px;
   height: 25px;
   background-color: #ffffff;

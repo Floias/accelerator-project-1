@@ -24,7 +24,7 @@
 }
 
 .jury__title {
-  margin: 0 0 19px 0;
+  margin: 0 0 19px;
   font-family: $second-family-600;
   font-weight: 600;
   font-size: 32px;
@@ -66,7 +66,7 @@
   &::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     top: 3px;
     left: 2px;
     width: 23px;
@@ -86,7 +86,7 @@
     display: none;
     position: absolute;
     transform: translate(-40%, -50%);
-    content: '';
+    content: "";
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -141,7 +141,7 @@
 .jury__item-active {
   &:hover::before {
     position: absolute;
-    content: '';
+    content: "";
     left: 0;
     width: 260px;
     height: 100%;
@@ -193,7 +193,7 @@
 }
 
 .jury__item-description {
-  margin: 0 0 11px 0;
+  margin: 0 0 11px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -201,6 +201,7 @@
 
 .jury__achievements-list {
   @include reset-list;
+
   padding-left: 20px;
   width: 200px;
   font-family: $font-family;
@@ -214,7 +215,7 @@
 
   &::before {
     margin-right: 10px;
-    content: '';
+    content: "";
     display: block;
     flex-shrink: 0;
     width: 6px;
