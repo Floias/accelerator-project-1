@@ -4,7 +4,7 @@
   width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
-    padding: 60px 164px;
+    padding: 60px 164px 53px 164px;
     width: $breakpoint-tablet;
   }
 
@@ -84,8 +84,8 @@
   line-height: 1.43;
 
   @media #{$not-mobile} {
-    margin-bottom: 13px;
     line-height: 1.57;
+    margin-bottom: 13px;
   }
 
   @media #{$desktop-only} {
@@ -95,20 +95,28 @@
 
 .contacts__link {
   @include link;
-  margin-bottom: 27px;
   font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
   color: inherit;
 
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
   @media #{$not-mobile} {
-    margin-bottom: 13px;
     line-height: 1.57;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
   }
 
   @media #{$desktop-only} {
-    margin-bottom: 14px;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
 
   &:hover {

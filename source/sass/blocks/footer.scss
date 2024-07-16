@@ -8,20 +8,32 @@
   width: $breakpoint-mobile;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   color: #ffffff;
 
   @media #{$not-mobile} {
-    padding: 45px;
+    padding: 41px 45px;
     width: $breakpoint-tablet;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 35px;
   }
 
   @media #{$desktop-only} {
-    padding: 40px 103px;
+    padding: 36px 103px 33px 103px;
     width: $breakpoint-desktop;
-    gap: 260px;
+    justify-content: flex-end;
+    gap: 45px;
+  }
+}
+
+.footer__logo-wrapper {
+  @media #{$not-mobile} {
+    padding-top: 4px;
+  }
+
+  @media #{$desktop-only} {
+    margin-right: auto;
   }
 }
 
@@ -43,12 +55,18 @@
 
 .footer__navigation-list {
   @include reset-list;
+  margin-left: -10px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px 15px;
 
   @media #{$not-mobile} {
-    gap: 10px;
+    gap: 11px;
+  }
+
+  @media #{$desktop-only} {
+    width: 743px;
+    gap: 63px;
   }
 }
 
@@ -82,12 +100,18 @@
 
 .footer__social-list {
   @include reset-list;
+  padding-top: 3px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 
   @media #{$not-mobile} {
-    gap: 12px;
+    margin: 1px 0 0 -10px;
+    gap: 15px;
+  }
+
+  @media #{$desktop-only} {
+    gap: 10px;
   }
 }
 
