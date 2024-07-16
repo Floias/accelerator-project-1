@@ -85,18 +85,18 @@
           <ul class="tabs__pagination-list">
             <li class="tabs__pagination-item">
 <!-- Смена активной кнопки управляется классом tabs__button-active -->
-              <button class="tabs__pagination-item-button tabs__button tabs__button-active" type="button">1&nbsp;месяц</button>
+              <button class="tabs__pagination-item-button tabs__button tabs__button-active" type="button" data-duration="duration-1">1&nbsp;месяц</button>
             </li>
             <li class="tabs__pagination-item">
-              <button class="tabs__pagination-item-button tabs__button" type="button">6&nbsp;месяцев</button>
+              <button class="tabs__pagination-item-button tabs__button" type="button" data-duration="duration-6">6&nbsp;месяцев</button>
             </li>
             <li class="tabs__pagination-item">
-              <button class="tabs__pagination-item-button tabs__button" type="button">12&nbsp;месяцев</button>
+              <button class="tabs__pagination-item-button tabs__button" type="button" data-duration="duration-12">12&nbsp;месяцев</button>
             </li>
           </ul>
           <ul class="tabs__contents-list">
 <!-- Смена информации в табе классом tabs__item-active -->
-            <li class="tabs__contents-item tabs__item-active">
+            <li class="tabs__contents-item tabs__item-active" id="duration-1">
               <ul class="tabs__content-list">
                 <li class="tabs__content-item" data-price="5000">
                   <h3 class="tabs__item-title">С&nbsp;тренером</h3>
@@ -121,7 +121,7 @@
                 </li>
               </ul>
             </li>
-            <li class="tabs__contents-item">
+            <li class="tabs__contents-item" id="duration-6">
               <ul class="tabs__content-list">
                 <li class="tabs__content-item" data-price="30000">
                   <h3 class="tabs__item-title">С&nbsp;тренером</h3>
@@ -146,7 +146,7 @@
                 </li>
               </ul>
             </li>
-            <li class="tabs__contents-item">
+            <li class="tabs__contents-item" id="duration-12">
               <ul class="tabs__content-list">
                 <li class="tabs__content-item" data-price="60000">
                   <h3 class="tabs__item-title">С&nbsp;тренером</h3>
@@ -467,9 +467,11 @@
                   <span class="visually-hidden">Нажмите, чтобы развернуть или свернуть ответ.</span>
                 </button>
               </div>
-              <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+              <p>
+                При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
                 <br>
-                 При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам на&nbsp;почту.</p>
+                При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придёт вам на&nbsp;почту.
+                </p>
             </li>
             <li class="faq__contents-item">
               <div>

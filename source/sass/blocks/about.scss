@@ -143,6 +143,16 @@
 
 .about__video-wrapper iframe {
   display: none;
+
+  @media #{$not-mobile} {
+    width: 270px;
+    height: 170px;
+  }
+
+  @media #{$desktop-only} {
+    width: 360px;
+    height: 230px;
+  }
 }
 
 .about__video-wrapper img {
