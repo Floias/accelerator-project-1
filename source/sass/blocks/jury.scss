@@ -1,25 +1,29 @@
 .jury {
-  padding: 41px 0;
+  margin: 0 auto;
+  padding: 41px 30px;
+  width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
-    padding: 30px 0 60px;
+    padding: 30px 104px 60px;
+    width: $breakpoint-tablet;
   }
 
   @media #{$desktop-only} {
-    padding: 100px 0;
+    padding: 100px 103px;
+    width: $breakpoint-desktop;
   }
 }
 
 .jury__container {
-  margin: 0 auto;
+  width: 260px;
 
   @media #{$not-mobile} {
     position: relative;
-    width: 678px;
+    width: 560px;
   }
 
   @media #{$desktop-only} {
-    width: 1270px;
+    width: 1160px;
   }
 }
 
@@ -46,15 +50,21 @@
 
   @media #{$not-mobile} {
     position: absolute;
-    width: 100%;
+    left: 45px;
+    width: 670px;
     height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
+  @media #{$desktop-only} {
+    width: 1270px;
+  }
 }
 
 .jury__button {
+  display: none;
   position: relative;
   margin: 7px;
   width: 30px;
@@ -62,6 +72,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media #{$not-mobile} {
+    display: block;
+  }
 
   &::after {
     position: absolute;
@@ -95,6 +109,10 @@
     @media #{$desktop-only} {
       transform: translate(-35%, -55%);
     }
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 
   &:focus-visible::before {
@@ -134,11 +152,9 @@
 }
 
 .jury__item {
-  display: none;
   position: relative;
-}
+  width: 260px;
 
-.jury__item-active {
   &:hover::before {
     position: absolute;
     content: "";
@@ -147,27 +163,13 @@
     height: 100%;
     background-color: rgba(16, 38, 84, 0.89);
   }
-
-  @media #{$desktop-only} {
-    display: block;
-  }
 }
 
-.jury__item-active:first-child {
-  display: block;
-}
-
-.jury__item-active:nth-child(3n - 1) {
-  @media #{$not-mobile} {
-    display: block;
-  }
-}
-
-.jury__item-active:hover .jury__item-title {
+.jury__item:hover .jury__item-title {
   transform: translate(-50%, -191px);
 }
 
-.jury__item-active:hover .jury__content {
+.jury__item:hover .jury__content {
   display: block;
 }
 
@@ -226,13 +228,16 @@
 }
 
 .jury__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  @include reset-list;
+  width: 260px;
 
   @media #{$not-mobile} {
-    gap: 0 40px;
+    position: relative;
+    width: 560px;
+  }
+
+  @media #{$not-mobile} {
+    width: 1160px;
   }
 }
 
