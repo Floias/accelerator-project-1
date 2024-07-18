@@ -45,14 +45,19 @@
   }
 }
 
+.jury__slider {
+  position: relative;
+}
+
 .jury__control {
   display: none;
 
   @media #{$not-mobile} {
     position: absolute;
-    left: 45px;
-    width: 670px;
-    height: 300px;
+    left: -58px;
+    top: 50%;
+    width: 679px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
