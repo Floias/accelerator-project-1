@@ -1,6 +1,7 @@
-.jury {
+.jury__slider {
   margin: 0 auto;
   padding: 41px 30px;
+  position: relative;
   width: $breakpoint-mobile;
 
   @media #{$not-mobile} {
@@ -18,7 +19,6 @@
   width: 260px;
 
   @media #{$not-mobile} {
-    position: relative;
     width: 560px;
   }
 
@@ -43,10 +43,6 @@
   @media #{$desktop-only} {
     margin-bottom: 45px;
   }
-}
-
-.jury__slider {
-  position: relative;
 }
 
 .jury__control {

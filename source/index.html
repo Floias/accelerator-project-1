@@ -619,8 +619,7 @@
         </div>
       </section>
       <section class="reviews" data-test="reviews">
-        <div class="reviews__container">
-          <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider">
           <div class="reviews__control">
             <button class="reviews__button reviews__button--prev" type="button">
               <span class="visually-hidden">Предыдущий отзыв.</span>
@@ -629,24 +628,27 @@
               <span class="visually-hidden">Следующий отзыв.</span>
             </button>
           </div>
-          <ul class="reviews__list">
-            <li class="reviews__item reviews__item--active">
-              <img src="./img/reviwes-orlova-a-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
-              <h3>Анна Орлова</h3>
-              <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.
-                <br>Зал просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей&raquo;</p>
-            </li>
-            <li class="reviews__item">
-              <img src="./img/reviwes-ivanov-m-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
-              <h3>Максим Иванов</h3>
-              <p>&laquo;Supergym - отличное место для занятий спортом. Впечатлила чистота и порядок в клубе, всегда свежие тренажёры и приятная атмосфера. Персонал профессиональный и внимательный. Рекомендую!&raquo;</p>
-            </li>
-            <li class="reviews__item">
-              <img src="./img/reviwes-smirnova-e-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
-              <h3>Елена Смирнова</h3>
-              <p>&laquo;Я в восторге от Supergym! Здесь всегда приятная обстановка, приветливый персонал и удобное расписание занятий. Тренажёры всегда в хорошем состоянии, а зал просторный, что очень важно для комфортных тренировок&raquo;</p>
-            </li>
-          </ul>
+          <div class="reviews__container swiper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <ul class="reviews__list swiper__wrapper">
+              <li class="reviews__item swiper__slide">
+                <img src="./img/reviwes-orlova-a-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
+                <h3>Анна Орлова</h3>
+                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.
+                  <br>Зал просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей&raquo;</p>
+              </li>
+              <li class="reviews__item swiper__slide">
+                <img src="./img/reviwes-ivanov-m-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
+                <h3>Максим Иванов</h3>
+                <p>&laquo;Supergym - отличное место для занятий спортом. Впечатлила чистота и порядок в клубе, всегда свежие тренажёры и приятная атмосфера. Персонал профессиональный и внимательный. Рекомендую!&raquo;</p>
+              </li>
+              <li class="reviews__item swiper__slide">
+                <img src="./img/reviwes-smirnova-e-mobile@1x.jpg" alt="Аватар автора отзыва." width="68" height="68">
+                <h3>Елена Смирнова</h3>
+                <p>&laquo;Я в восторге от Supergym! Здесь всегда приятная обстановка, приветливый персонал и удобное расписание занятий. Тренажёры всегда в хорошем состоянии, а зал просторный, что очень важно для комфортных тренировок&raquo;</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <div class="free-contacts-wrapper" data-test="form">

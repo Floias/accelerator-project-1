@@ -22,7 +22,7 @@ const initJurySlider = () => {
       },
     },
     init: false,
-    slideActiveClass: 'jury__item-active',
+    slideActiveClass: 'jury__item--active',
     slideClass: 'jury__item',
     wrapperClass: 'jury__list',
     loop: true,
