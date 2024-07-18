@@ -32,11 +32,10 @@ const initJurySlider = () => {
     },
   });
 
-  const lol = document.querySelector('.jury__container');
+  const container = document.querySelector('.jury__container');
 
-  if (lol) {
-    swiper.init(lol);
-    console.log(lol)
+  if (container) {
+    swiper.init(container);
   }
 };
 
