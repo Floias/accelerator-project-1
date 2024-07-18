@@ -448,19 +448,19 @@
           <h2 class="faq__title">Вопросы и&nbsp;ответы</h2>
           <ul class="faq__pagination-list">
             <li class="faq__pagination-item faq__pagination-item--active">
-              <button class="faq__pagination-item-button faq__button faq__button-active" type="button">Центр</button>
+              <button class="faq__pagination-item-button faq__button faq__button--active" type="button" data-faq="faq-center">Центр</button>
             </li>
             <li class="faq__pagination-item">
-              <button class="faq__pagination-item-button" type="button">Абонемент</button>
+              <button class="faq__pagination-item-button" type="button" data-faq="faq-season-ticket">Абонемент</button>
             </li>
             <li class="faq__pagination-item">
-              <button class="faq__pagination-item-button" type="button">Услуги</button>
+              <button class="faq__pagination-item-button" type="button" data-faq="faq-services">Услуги</button>
             </li>
             <li class="faq__pagination-item">
-              <button class="faq__pagination-item-button" type="button">Правила</button>
+              <button class="faq__pagination-item-button" type="button" data-faq="faq-rules">Правила</button>
             </li>
           </ul>
-          <ul class="faq__contents-list faq__contents-list--active">
+          <ul class="faq__contents-list faq__contents-list--active" id="faq-center">
             <li class="faq__contents-item faq__contents-item--open">
               <div>
                 <h3>Как стать членом фитнес&#8209;центра?</h3>
@@ -502,7 +502,7 @@
               <p>В&nbsp;нашем клубе работает более 10&nbsp;высококвалифицированных тренеров. Все тренеры имеют сертификаты и&nbsp;большой опыт работы с&nbsp;клиентами на&nbsp;различных уровнях подготовки.</p>
             </li>
           </ul>
-          <ul class="faq__contents-list">
+          <ul class="faq__contents-list" id="faq-season-ticket">
             <li class="faq__contents-item">
               <div>
                 <h3>Как долго действует абонемент?</h3>
@@ -540,7 +540,7 @@
               <p>Возможность смены типа абонемента после покупки зависит от&nbsp;наших правил и&nbsp;политики. Рекомендуется обратиться к&nbsp;нашему персоналу для уточнения возможностей и&nbsp;условий смены абонемента.</p>
             </li>
           </ul>
-          <ul class="faq__contents-list">
+          <ul class="faq__contents-list" id="faq-services">
             <li class="faq__contents-item">
               <div>
                 <h3>Какие виды массажа предлагает ваш центр?</h3>
@@ -578,7 +578,7 @@
               <p>Сделайте приятный подарок своим близким&nbsp;&mdash; купите подарочный сертификат на&nbsp;услуги нашего центра. Обратитесь к&nbsp;нам для получения подробной информации.</p>
             </li>
           </ul>
-          <ul class="faq__contents-list">
+          <ul class="faq__contents-list" id="faq-rules">
             <li class="faq__contents-item">
               <div>
                 <h3>Какие правила использования оборудования в&nbsp;фитнес-центре?</h3>

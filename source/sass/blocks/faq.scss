@@ -98,7 +98,7 @@
   }
 }
 
-.faq__pagination-item--active .faq__pagination-item-button {
+.faq__button--active {
   border-color: transparent;
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
@@ -196,6 +196,7 @@
   border-radius: 50%;
   border: solid 1px #1c3374;
   background-color: transparent;
+  cursor: pointer;
 
   &::before,
   &::after {

@@ -1,6 +1,6 @@
 const tabs = document.querySelector('.tabs');
-const tabButtons = document.querySelectorAll('.tabs__button');
-const tabContents = document.querySelectorAll('.tabs__contents-item');
+const tabButtons = tabs.querySelectorAll('.tabs__button');
+const tabContents = tabs.querySelectorAll('.tabs__contents-item');
 
 const onButtonClick = (evt) => {
   const btnTarget = evt.currentTarget;
