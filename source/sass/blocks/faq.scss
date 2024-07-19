@@ -153,6 +153,10 @@
   display: none;
   font-size: 16px;
   line-height: 1.25;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.6s ease, max-height 0.6s ease;
 
   @media #{$not-mobile} {
     font-size: 18px;
@@ -167,6 +171,7 @@
 
 .faq__contents-item--open p {
   display: block;
+  opacity: 1;
 }
 
 .faq__contents-list div {

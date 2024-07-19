@@ -1,11 +1,22 @@
 const faq = document.querySelector('.faq');
 const faqButtons = faq.querySelectorAll('.faq__pagination-item-button');
 const faqContents = faq.querySelectorAll('.faq__contents-list');
+const faqContentOpen = faq.querySelector('.faq__contents-item--open p');
+
+const initialFaq = () => {
+  faqContentOpen.style.maxHeight = `${faqContentOpen.scrollHeight}px`;
+};
 
 const onAccordionTitleClick = (evt) => {
   const accordionItem = evt.target.parentElement.parentElement;
   if (accordionItem.classList.contains('faq__contents-item')) {
     accordionItem.classList.toggle('faq__contents-item--open');
+  }
+  const accordionContent = accordionItem.querySelector('p');
+  if (accordionItem.classList.contains('faq__contents-item--open')) {
+    accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
+  } else {
+    accordionContent.style.maxHeight = 0;
   }
 };
 
@@ -50,4 +61,4 @@ const opensSectionFaq = () => {
   removesClickEvent();
 };
 
-export { opensSectionFaq };
+export { opensSectionFaq, initialFaq };
