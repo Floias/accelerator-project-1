@@ -2,6 +2,27 @@ const faq = document.querySelector('.faq');
 const faqButtons = faq.querySelectorAll('.faq__pagination-item-button');
 const faqContents = faq.querySelectorAll('.faq__contents-list');
 
+const onAccordionTitleClick = (evt) => {
+  const accordionItem = evt.target.parentElement.parentElement;
+  if (accordionItem.classList.contains('faq__contents-item')) {
+    accordionItem.classList.toggle('faq__contents-item--open');
+  }
+};
+
+const addsClickEvent = () => {
+  const accordion = faq.querySelector('.faq__contents-list--active');
+  accordion.addEventListener('click', onAccordionTitleClick);
+};
+
+const removesClickEvent = () => {
+  const accordions = faq.querySelectorAll('.faq__contents-list');
+  accordions.forEach((item) => {
+    if (!item.classList.contains('faq__contents-list--active')) {
+      item.removeEventListener('click', onAccordionTitleClick);
+    }
+  });
+};
+
 const onButtonClick = (evt) => {
   const btnTarget = evt.currentTarget;
   const sections = btnTarget.dataset.faq;
@@ -17,12 +38,16 @@ const onButtonClick = (evt) => {
   faq.querySelector(`#${sections}`).classList.add('faq__contents-list--active');
 
   btnTarget.classList.add('faq__button--active');
+  addsClickEvent();
+  removesClickEvent();
 };
 
 const opensSectionFaq = () => {
   faqButtons.forEach((element) => {
     element.addEventListener('click', onButtonClick);
   });
+  addsClickEvent();
+  removesClickEvent();
 };
 
 export { opensSectionFaq };
