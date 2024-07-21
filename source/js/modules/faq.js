@@ -3,6 +3,9 @@ const faqButtons = faq.querySelectorAll('.faq__pagination-item-button');
 const faqContents = faq.querySelectorAll('.faq__contents-list');
 const faqContentOpen = faq.querySelector('.faq__contents-item--open p');
 
+const isEscapeKey = (evt) => evt.key === 'Escape';
+const isEnterKey = (evt) => evt.key === 'Enter';
+
 const initialFaq = () => {
   faqContentOpen.style.maxHeight = `${faqContentOpen.scrollHeight}px`;
 };
