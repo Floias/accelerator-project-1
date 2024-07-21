@@ -662,12 +662,18 @@
                     <span>Введите ваше имя.</span>
                   </label>
                   <input class="free__input" type="text" name="name" id="name" placeholder="Имя" required>
+                  <span class="free__error free__error--name">
+                    Корректное имя - буквы и&nbsp;пробелы.
+                  </span>
                 </li>
                 <li class="free__item">
                   <label class="free__label visually-hidden" for="telephone">
                     <span>Введите ваш телефон.</span>
                   </label>
                   <input class="free__input" type="text" name="telephone" id="telephone" placeholder="Телефон" required>
+                  <span class="free__error free__error--telephone">
+                    Корректный телефон - только цифры.
+                  </span>
                 </li>
               </ul>
               <button class="free__button" type="submit">Oтправить</button>

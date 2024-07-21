@@ -12,10 +12,11 @@ const onAccordionTitleClick = (evt) => {
   if (accordionItem.classList.contains('faq__contents-item')) {
     accordionItem.classList.toggle('faq__contents-item--open');
   }
-  const accordionContent = accordionItem.querySelector('p');
   if (accordionItem.classList.contains('faq__contents-item--open')) {
+    const accordionContent = accordionItem.querySelector('p');
     accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
   } else {
+    const accordionContent = accordionItem.querySelector('p');
     accordionContent.style.maxHeight = 0;
   }
 };

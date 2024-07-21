@@ -133,3 +133,24 @@
     opacity: 0.3;
   }
 }
+
+.free__error {
+  position: absolute;
+  display: none;
+  width: 290px;
+  font-family: $font-family;
+  font-weight: 400;
+  color: #ff121f;
+
+  @media #{$not-mobile} {
+    width: 205px;
+  }
+
+  @media #{$desktop-only} {
+    width: 224px;
+  }
+}
+
+.free__input--error {
+  border-bottom: 1px solid #ff121f;
+}

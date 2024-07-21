@@ -5,6 +5,7 @@ import { initJurySlider } from './modules/jury';
 import { initReviewsSlider } from './modules/reviews';
 import { opensSectionFaq } from './modules/faq';
 import { initialFaq } from './modules/faq';
+import { validatesForm } from './modules/validation';
 
 movesSeasonTickets();
 playVideo();
@@ -13,3 +14,4 @@ initJurySlider();
 initReviewsSlider();
 initialFaq();
 opensSectionFaq();
+validatesForm();
