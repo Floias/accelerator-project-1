@@ -50,8 +50,8 @@
 
   @media #{$not-mobile} {
     position: absolute;
-    left: -58px;
-    top: 50%;
+    left: 46px;
+    top: 47%;
     width: 679px;
     height: 100px;
     display: flex;
@@ -60,6 +60,7 @@
   }
 
   @media #{$desktop-only} {
+    top: 50%;
     width: 1270px;
   }
 }
@@ -156,8 +157,10 @@
   position: relative;
   width: 260px;
 
+  &:focus::before,
   &:hover::before {
     position: absolute;
+    outline: none;
     content: "";
     left: 0;
     width: 260px;
@@ -166,10 +169,12 @@
   }
 }
 
+.jury__item:focus .jury__item-title,
 .jury__item:hover .jury__item-title {
   transform: translate(-50%, -191px);
 }
 
+.jury__item:focus .jury__content,
 .jury__item:hover .jury__content {
   display: block;
 }
