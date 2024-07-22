@@ -4,7 +4,6 @@ const faqContents = faq.querySelectorAll('.faq__contents-list');
 const faqContentOpen = faq.querySelector('.faq__contents-item--open p');
 
 const isEscapeKey = (evt) => evt.key === 'Escape';
-const isEnterKey = (evt) => evt.key === 'Enter';
 
 const initialFaq = () => {
   faqContentOpen.style.maxHeight = `${faqContentOpen.scrollHeight}px`;
@@ -24,16 +23,28 @@ const onAccordionTitleClick = (evt) => {
   }
 };
 
-const addsClickEvent = () => {
-  const accordion = faq.querySelector('.faq__contents-list--active');
-  accordion.addEventListener('click', onAccordionTitleClick);
+const onAccordionTitleKeydown = (evt) => {
+  if (isEscapeKey(evt)) {
+    evt.preventDefault();
+    const accordionItem = evt.target.parentElement.parentElement;
+    if (accordionItem.classList.contains('faq__contents-item--open')) {
+      accordionItem.classList.remove('faq__contents-item--open');
+    }
+  }
 };
 
-const removesClickEvent = () => {
+const addsEvents = () => {
+  const accordion = faq.querySelector('.faq__contents-list--active');
+  accordion.addEventListener('click', onAccordionTitleClick);
+  accordion.addEventListener('keydown', onAccordionTitleKeydown);
+};
+
+const removesEvents = () => {
   const accordions = faq.querySelectorAll('.faq__contents-list');
   accordions.forEach((item) => {
     if (!item.classList.contains('faq__contents-list--active')) {
       item.removeEventListener('click', onAccordionTitleClick);
+      item.removeEventListener('keydown', onAccordionTitleKeydown);
     }
   });
 };
@@ -53,16 +64,16 @@ const onButtonClick = (evt) => {
   faq.querySelector(`#${sections}`).classList.add('faq__contents-list--active');
 
   btnTarget.classList.add('faq__button--active');
-  addsClickEvent();
-  removesClickEvent();
+  addsEvents();
+  removesEvents();
 };
 
 const opensSectionFaq = () => {
   faqButtons.forEach((element) => {
     element.addEventListener('click', onButtonClick);
   });
-  addsClickEvent();
-  removesClickEvent();
+  addsEvents();
+  removesEvents();
 };
 
 export { opensSectionFaq, initialFaq };
