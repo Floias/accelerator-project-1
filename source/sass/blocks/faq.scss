@@ -88,6 +88,7 @@
 
   &:focus-visible,
   &:hover {
+    outline: none;
     border-color: #102654;
   }
 
@@ -102,6 +103,16 @@
   border-color: transparent;
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+
+  &:focus-visible,
+  &:hover {
+    background: rgba(255, 255, 255, 0);
+    color: inherit;
+  }
+
+  &:disabled {
+    background: rgba(255, 255, 255, 0);
+  }
 }
 
 .faq__contents-list {
