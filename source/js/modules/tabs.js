@@ -6,21 +6,21 @@ const onButtonClick = (evt) => {
   const btnTarget = evt.currentTarget;
   const duration = btnTarget.dataset.duration;
 
-  tabContents.forEach((item) => {
+  tabContents?.forEach((item) => {
     item.classList.remove('tabs__item-active');
   });
 
-  tabButtons.forEach((item) => {
+  tabButtons?.forEach((item) => {
     item.classList.remove('tabs__button-active');
   });
 
-  tabs.querySelector(`#${duration}`).classList.add('tabs__item-active');
+  tabs?.querySelector(`#${duration}`).classList.add('tabs__item-active');
 
   btnTarget.classList.add('tabs__button-active');
 };
 
 const opensTabs = () => {
-  tabButtons.forEach((element) => {
+  tabButtons?.forEach((element) => {
     element.addEventListener('click', onButtonClick);
   });
 };

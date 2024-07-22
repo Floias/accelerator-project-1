@@ -11,7 +11,7 @@ const onClickButton = () => {
 };
 
 const movesSeasonTickets = () => {
-  heroButton.addEventListener('click', onClickButton);
+  heroButton?.addEventListener('click', onClickButton);
 };
 
 export { movesSeasonTickets };

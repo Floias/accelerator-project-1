@@ -9,6 +9,6 @@ const onButtonClick = () => {
   videoIframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
 };
 
-const playVideo = () => playButton.addEventListener('click', onButtonClick);
+const playVideo = () => playButton?.addEventListener('click', onButtonClick);
 
 export { playVideo };

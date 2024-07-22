@@ -1,4 +1,5 @@
 import { Swiper } from '../vendor/swiper';
+import { sliderOptions } from '../data/data';
 
 const initJurySlider = () => {
   const swiper = new Swiper('.jury__container', {
@@ -7,20 +8,7 @@ const initJurySlider = () => {
       nextSlideMessage: 'Next slide',
     },
     breakpointsBase: 'container',
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40,
-      },
-      560: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1160: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      },
-    },
+    breakpoints: sliderOptions,
     init: false,
     slideActiveClass: 'jury__item--active',
     slideClass: 'jury__item',

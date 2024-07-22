@@ -17,14 +17,14 @@ const isValidTelephone = (telephone) => {
 const onSubmitForm = (evt) => {
   evt.preventDefault();
 
-  const name = nameInput.value;
-  const telephone = telephoneInput.value;
+  const name = nameInput?.value;
+  const telephone = telephoneInput?.value;
 
   messageName.style.display = isValidName(name) ? 'none' : 'block';
-  nameInput.classList.toggle('free__input--error', !isValidName(name));
+  nameInput?.classList.toggle('free__input--error', !isValidName(name));
 
   messageTelephone.style.display = isValidTelephone(telephone) ? 'none' : 'block';
-  telephoneInput.classList.toggle('free__input--error', !isValidTelephone(telephone));
+  telephoneInput?.classList.toggle('free__input--error', !isValidTelephone(telephone));
 
   if (isValidName(name) && isValidTelephone(telephone)) {
     form.submit();

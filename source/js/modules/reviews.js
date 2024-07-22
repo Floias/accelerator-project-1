@@ -1,4 +1,5 @@
 import { Swiper } from '../vendor/swiper';
+import { sliderOptions } from '../data/data';
 
 const container = document.querySelector('.reviews__container');
 const buttonPrev = document.querySelector('.reviews__button--prev');
@@ -11,8 +12,8 @@ const initReviewsSlider = () => {
       nextSlideMessage: 'Next slide',
     },
     breakpointsBase: 'container',
-    slidesPerView: 1,
-    spaceBetween: 40,
+    slidesPerView: sliderOptions[320].slidesPerView,
+    spaceBetween: sliderOptions[320].spaceBetween,
     init: false,
     slideActiveClass: 'reviews__item--active',
     slideClass: 'reviews__item',

@@ -35,13 +35,13 @@ const onAccordionTitleKeydown = (evt) => {
 
 const addsEvents = () => {
   const accordion = faq.querySelector('.faq__contents-list--active');
-  accordion.addEventListener('click', onAccordionTitleClick);
-  accordion.addEventListener('keydown', onAccordionTitleKeydown);
+  accordion?.addEventListener('click', onAccordionTitleClick);
+  accordion?.addEventListener('keydown', onAccordionTitleKeydown);
 };
 
 const removesEvents = () => {
   const accordions = faq.querySelectorAll('.faq__contents-list');
-  accordions.forEach((item) => {
+  accordions?.forEach((item) => {
     if (!item.classList.contains('faq__contents-list--active')) {
       item.removeEventListener('click', onAccordionTitleClick);
       item.removeEventListener('keydown', onAccordionTitleKeydown);
@@ -53,15 +53,15 @@ const onButtonClick = (evt) => {
   const btnTarget = evt.currentTarget;
   const sections = btnTarget.dataset.faq;
 
-  faqContents.forEach((item) => {
+  faqContents?.forEach((item) => {
     item.classList.remove('faq__contents-list--active');
   });
 
-  faqButtons.forEach((item) => {
+  faqButtons?.forEach((item) => {
     item.classList.remove('faq__button--active');
   });
 
-  faq.querySelector(`#${sections}`).classList.add('faq__contents-list--active');
+  faq?.querySelector(`#${sections}`).classList.add('faq__contents-list--active');
 
   btnTarget.classList.add('faq__button--active');
   addsEvents();
@@ -69,7 +69,7 @@ const onButtonClick = (evt) => {
 };
 
 const opensSectionFaq = () => {
-  faqButtons.forEach((element) => {
+  faqButtons?.forEach((element) => {
     element.addEventListener('click', onButtonClick);
   });
   addsEvents();
