@@ -54,6 +54,7 @@
   font-size: 48px;
   line-height: 1.12;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   @media #{$desktop-only} {
     font-size: 82px;
