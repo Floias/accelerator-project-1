@@ -51,10 +51,25 @@
   }
 
   @media #{$desktop-only} {
+    position: relative;
     grid-template-columns: repeat(3, 360px);
     width: 1160px;
     margin: 0 auto;
     gap: 80px 40px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      width: 360px;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 }
 
